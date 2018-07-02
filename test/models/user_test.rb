@@ -19,6 +19,7 @@ test "name should not be too long" do
    assert_not @user.valid?
  end
 
+
  test "email should not be too long" do
    @user.email = "a" * 244 + "@example.com"
    assert_not @user.valid?
@@ -60,7 +61,7 @@ test "password should be present (nonblank)" do
   end
 
   test "password should have a minimum length" do
-    @user.password = @user.password_confirmation = "a" * 5
+    @user.password = @user.password_confirmation = "a" * 4
     assert_not @user.valid?
   end
 end
