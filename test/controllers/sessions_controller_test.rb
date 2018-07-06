@@ -6,6 +6,7 @@ class SessionsControllerTest < ActionDispatch::IntegrationTest
     get login_path
     assert_response :success
   end
+  
 
   test "login with invalid information" do
     get login_path
@@ -16,4 +17,6 @@ class SessionsControllerTest < ActionDispatch::IntegrationTest
     get root_path
     assert flash.empty?
   end
+
+
 end
