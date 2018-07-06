@@ -4,6 +4,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
 
 
 
+
   def setup
 @base_setup = "Ruby on Rails Tutorial Sample App"
   end
