@@ -8,6 +8,7 @@ class SessionsControllerTest < ActionDispatch::IntegrationTest
   end
   
 
+
   test "login with invalid information" do
     get login_path
     assert_template 'sessions/new'
